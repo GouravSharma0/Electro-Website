@@ -1,0 +1,212 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .row {
+  border: 1px solid black;
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-md-3 {
+  border: 1px solid rgb(136, 9, 240);
+} */
+
+#header-text-1 {
+  color: white;
+}
+
+#header-text-1:hover {
+  color: #d10024;
+}
+
+/* #single-line
+{
+    background-color: #D10024;
+     width: 100%; height: 3px;
+} */
+#hot-deals {
+  color: black;
+}
+
+#hot-deals:hover {
+  color: #d10024;
+  border-bottom: 2px solid #d10024;
+}
+
+#navbarhead {
+  background-color: white !important;
+}
+
+#shop01:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+#ul-laptop {
+  list-style: none;
+  white-space: nowrap;
+}
+
+#list-1 {
+  float: left;
+
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #8d99ae;
+  /* width: 100%; */
+  /* display: none; */
+}
+
+#list-1-a {
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #d10024;
+  border-bottom: #d10024 solid 2px;
+  /* width: 100%; */
+}
+
+#list-1:hover {
+  border-bottom: #d10024 solid 2px;
+}
+
+#product-name-goes-here {
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  /* color: #1E1F29; */
+}
+
+#product-name-goes-here:hover {
+  color: #d10024;
+}
+
+#card-main:hover {
+  border: 2px solid #d10024;
+}
+
+#button-add {
+  /* font-size: small; */
+  width: 200px;
+  border-radius: 40px;
+  background-color: #d10024;
+  border: none;
+  /* position: relative;
+    left: 20px; */
+}
+
+#span-add {
+  font-size: small;
+  font-weight: 700;
+}
+
+#row-add {
+  width: 100%;
+  background-color: #1e1f29;
+  display: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+  top: 421px;
+  /* margin-top: -200px; */
+  margin-left: 0px;
+  height: 80px;
+}
+
+#card-main:hover #row-add {
+  background-color: #1e1f29;
+  display: block;
+  z-index: 10;
+  transition: 0.5ms;
+}
+
+#cards-ul {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#list-li {
+  width: 400px;
+  height: 504px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.headphones
+{
+
+  margin-left: -100px;
+
+}
+
+#box-1 {
+  width: 100%;
+  height: 400px;
+  background-color: aqua;
+  background-image: url(photos/hotdeal.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#HOT-DEAL-THIS-WEEK {
+  font-weight: 700;
+  font-size: 30px;
+  position: relative;
+  top: 220px;
+}
+
+#red-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #d10024;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+  left: 370px;
+  margin: 10px;
+  float: left;
+}
+#list-footer {
+  color: #b9babc;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 2.5;
+}
+#list-footer:hover {
+  color: #d10024;
+}
+#prev
+{
+  position: absolute;
+  cursor: pointer;
+  left:100px ;
+  /* top: -20px; */
+  /* display: none; */
+  
+}
+#next
+{
+  cursor: pointer;
+  position: absolute;
+  left: 200px;
+  /* margin-top: -50px; */
+  
+}

@@ -1,0 +1,150 @@
+<?php 
+
+$con=mysqli_connect("localhost","root","");
+
+mysqli_select_db($con,"electro");
+
+if(isset($_POST["click"]))
+{
+    $mobile=$_POST["mobile"];
+
+    $password=$_POST["password"];
+
+    $qry="select * from table_register where mobile='".$mobile."' and password='".$password."' ";
+
+    $tbl=mysqli_query($con,$qry);
+
+    if($r=mysqli_fetch_array($tbl))
+    {
+        header("location:Electro.php");
+    }
+    else
+    {
+        echo "invalid id or password";
+    }
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- OWN LINK    -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="resposive.css"/>
+    <link rel="stylesheet" href="Electro.html">
+    
+
+
+
+    <!-- FONT AWESOME LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- JQUERY LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" />
+</head>
+
+<body>
+    
+
+
+    <div class="container-fluid" style="background-color: #DAAEE1">
+        <div class="container">
+            <br>
+            <br>
+            
+            
+<div class="row  "  >
+    <div class="col "  >
+<div class="row"  >
+    <div class="col-md-2"></div>
+    <div class="col-md-4 p-0"  >
+        <img src="photos/signin-image.jpg" style="border: none;   background: none; padding: 0px; border-top-left-radius: 20px;  border-top-right-radius: 0px; border-bottom-left-radius: 20px;  border-bottom-right-radius: 0px; "  class="img-thumbnail" alt="..." width="400px" height="400px" >
+    </div>
+    <div class="col-md-5 p-0 m-0" style="background-color: #FFFFFF; border-top-right-radius: 20px; border-bottom-right-radius: 20px; "   >
+       <center> <h3 style="color: red" >
+        <br>
+            HELLO <strong>WELCOME !</strong>
+            
+        </h3></center>
+        <center>
+            <br>
+        <form   method="post">
+
+<table  cellpadding="10px" >
+    
+
+    <tr>
+        <td>
+            <h5 style="color: grey;" ><b>Enter Your Number</b></h5>
+        </td>
+        <td>
+            <input type="text" name="mobile" id="" required>
+        </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <h5 style="color: grey;" ><b>Enter Your Password</b></h5>
+                </td>
+                <td>
+                    <input type="password" name="password" id="" required >
+                </td>
+            </tr>
+
+           
+
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" name="click"  class="btn btn-outline-danger"><b>LOGIN</b></button></td>
+                    </tr>
+</table>
+
+
+        </form>
+
+    </center>
+    
+
+    </div>
+
+</div>
+    </div>
+</div>
+<br><br>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
